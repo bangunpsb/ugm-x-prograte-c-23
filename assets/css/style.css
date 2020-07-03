@@ -1,0 +1,266 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: cursive;
+    scroll-behavior: smooth;
+}
+
+header ul li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.msg {
+    font-weight: bold;
+}
+
+header {
+    height: 65px;
+    width: 100%;
+    background-image: linear-gradient(90deg, #95a5a6, #2c3e50);
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+
+.header-left .logo {
+    margin-top: 20px;
+    color: #fff;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 17px;
+}
+
+.header-left {
+    float: left;
+}
+
+.logo {
+    margin-top: -1px;
+    width: 100px;
+    z-index: 10;
+    position: absolute;
+    margin-left: 50px;
+}
+
+.header-right {
+    margin-left: 60%;
+}
+
+.header-right a {
+    margin: 5px;
+    line-height: 50px;
+    padding: 0 25px;
+    color: #fff;
+    display: block;
+    float: left;
+    transition: all 0.5s;
+    border-radius: 5px;
+}
+
+.header-right a:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.header-right,
+.active {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+/* home */
+.home {
+    padding: 100px 0 100px 0;
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(90deg, #95a5a6, #2c3e50);
+    color: white;
+    text-align: center;
+}
+
+.home h1 {
+    font-size: 50px;
+}
+
+.home h2 {
+    font-size: 30px;
+    margin: 50px 0;
+    text-shadow: 5px 5px 10px #000000;
+}
+
+/* img batas */
+.img-batas img {
+    top: -5vw;
+    position: relative;
+    float: left;
+    width: 25%;
+    animation: dropbatas 5s ease;
+}
+
+/* projects */
+.projects {
+    margin: 0px 0px 0px 90px;
+    top: 10vw;
+    display: inline-block;
+    height: 50vw;
+    color: black;
+}
+
+.projects h1 {
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 100px;
+    display: block;
+}
+
+.projects input {
+    font-size: 15px;
+    padding: 8px;
+    display: block;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    width: 50%;
+    margin: 100px auto;
+}
+
+.projects input:focus {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
+}
+
+.projects input::placeholder {
+    color: black;
+    font-weight: bold;
+}
+
+/* about */
+.about {
+    position: relative;
+    padding: 100px 0 100px 0;
+    background-image: linear-gradient(180deg, #0099ff, #1E50D8);
+    color: black;
+    text-align: center;
+}
+
+.about h1 {
+    font-size: 40px;
+}
+
+.slider img {
+    margin-top: 3vw;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+
+.about blockquote {
+    margin-top: 3vw;
+}
+
+.about .slider {
+    display: none;
+}
+
+/* contact */
+.contact {
+    position: relative;
+    margin: 100px 0px 0px 0px;
+    padding: 100px 0 100px 0;
+    background-image: linear-gradient(to right, #1E50D8, #E8EB25);
+    color: black;
+}
+
+.contact h1 {
+    text-align: center;
+}
+
+.contact p {
+    text-align: center;
+    margin: 20px 0 50px 0;
+}
+
+.contact #my-form-status {
+    text-align: left;
+    height: 0;
+    background: red;
+    animation: dropbatas 5s ease;
+}
+
+.form img {
+    float: right;
+    display: inline-block;
+    width: 30vw;
+    margin: 2vw;
+    animation: dropcontact 10s ease infinite;
+}
+
+.contact input,
+textarea {
+    border-radius: 5px;
+    color: #000000;
+    font-weight: bold;
+    font-size: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc !important;
+    display: block;
+    padding: 8px;
+    width: 50%;
+}
+
+.contact input:focus,
+textarea:focus {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
+}
+
+.contact input::placeholder,
+textarea::placeholder {
+    color: #1E50D8;
+    font-weight: bold;
+}
+
+.sosial-media {
+    color: #fff;
+    text-shadow: 1px 1px 1px #ccc;
+    font-size: 50px;
+    margin-top: 50px;
+    text-align: center;
+
+}
+
+.sosial-media a {
+    margin: 0 50px;
+}
+
+.sosial-media .fb {
+    color: #3b5998;
+    animation-name: spinfb;
+    animation-duration: 5000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+.sosial-media .twt {
+    color: #1DA1F2;
+    animation-name: spintwit;
+    animation-duration: 5000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.sosial-media .yt {
+    color: #FF0000;
+    animation-name: spinyt;
+    animation-duration: 5000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+/* footer */
+#footer {
+    font-size: 10px;
+    text-align: center;
+    line-height: 100px;
+    color: #fff;
+    background-color: #27272a;
+}

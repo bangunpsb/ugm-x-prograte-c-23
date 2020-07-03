@@ -1,0 +1,231 @@
+/* pc */
+@media all and (min-width: 1200px) {
+    .img-batas img {
+        display: block;
+        width: 20%;
+        animation: dropbatas 5s ease;
+    }
+
+    .projects {
+        display: inline;
+        margin-left: -100px;
+    }
+
+    .projects h1 {
+        margin: 10% 100px 100px 0;
+        text-align: center;
+    }
+
+    .card {
+        position: relative;
+        float: left;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        transition: 0.3s;
+        width: 25%;
+        background-color: #ffffff;
+        border-radius: 5px;
+        margin-bottom: 50px;
+    }
+
+    .about {
+        margin-top: 100px;
+    }
+
+}
+
+
+
+/* tablet */
+@media all and (max-width:1000px) {
+    .header-right {
+        margin-left: 20%;
+    }
+
+    .home h1 {
+        font-size: 30px;
+    }
+
+    .img-batas img {
+        display: block;
+        width: 20%;
+        animation: dropbatas 5s ease;
+    }
+
+    /* projects */
+    .projects {
+        display: inline;
+    }
+
+    .projects h1 {
+        font-size: 30px;
+        display: block;
+        margin: 15% 0px 50px 0;
+    }
+
+    .card {
+        position: relative;
+        float: left;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        transition: 0.3s;
+        width: 50%;
+        background-color: #ffffff;
+        border-radius: 5px;
+        margin-bottom: 50px;
+    }
+
+    .about h1 {
+        font-size: 30px;
+    }
+
+}
+
+
+/* hp */
+@media all and (max-width: 670px) {
+
+    /* burger position */
+    header ul {
+        position: absolute;
+        left: 0;
+        top: 50px;
+        width: 100%;
+        height: 100vh;
+        padding: 50px 100px;
+        overflow: auto;
+        transition: 0.5s;
+        background-image: linear-gradient(90deg, #95a5a6, #2c3e50);
+        flex-direction: column;
+        transform: translateY(-100%);
+    }
+
+    #navbar.click-active header ul {
+        transform: translateY(0%);
+    }
+
+    header ul li a {
+        margin: 5px 0;
+        font-size: 24px;
+    }
+
+    .burger {
+        display: inline-block;
+        margin: 10px 0 0 50%;
+        position: relative;
+        width: 10%;
+        height: 20px;
+        z-index: 3;
+        box-shadow: 0 5px 0 #95a5a6;
+        cursor: pointer;
+    }
+
+    .burger::before {
+        content: '';
+        display: inline-block;
+        position: absolute;
+        width: 100%;
+        top: 20px;
+        height: 5px;
+        z-index: 3;
+        box-shadow: 0 10px 0 #95a5a6;
+        transition: 0.5s;
+        cursor: pointer;
+    }
+
+    .burger::after {
+        content: '';
+        display: inline-block;
+        position: absolute;
+        width: 100%;
+        bottom: 15px;
+        height: 5px;
+        z-index: 3;
+        box-shadow: 0 10px 0 #95a5a6;
+        transition: 0.5s;
+        cursor: pointer;
+    }
+
+    .burger {
+        float: right;
+    }
+
+    #navbar.click-active .burger {
+        transition: transform 0.5s;
+    }
+
+    #navbar.click-active .burger::after {
+        width: 50%;
+    }
+
+    /* home */
+    .home h1 {
+        font-size: 25px;
+    }
+
+    .home h2 {
+        font-size: 20px;
+    }
+
+    .img-batas img {
+        display: block;
+        width: 40%;
+        animation: dropbatas 5s ease;
+    }
+
+    /* projects */
+    .projects {
+        display: inline;
+    }
+
+    .projects h1 {
+        font-size: 25px;
+        display: block;
+        margin: 100px 100px 50px 0;
+        text-align: center;
+    }
+
+    .card {
+        float: left;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        transition: 0.3s;
+        width: 100%;
+        background-color: #ffffff;
+        border-radius: 5px;
+        margin-bottom: 50px;
+    }
+
+    /* about */
+    .about h1 {
+        font-size: 25px;
+    }
+
+    blockquote {
+        font-size: 12px;
+    }
+
+    /* contact */
+    .contact p {
+        margin: 0;
+    }
+
+    .form img {
+        width: 50%;
+    }
+
+    .contact input,
+    textarea {
+        font-size: 10px;
+        margin-bottom: 20px;
+        border: 1px solid #ccc !important;
+        display: block;
+        padding: 8px;
+        width: 100%;
+    }
+
+    /* sosmed */
+    .sosial-media {
+        font-size: 40px;
+        margin-top: 50px;
+        text-align: center;
+    }
+
+}
